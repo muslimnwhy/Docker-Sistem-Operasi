@@ -1,8 +1,13 @@
 # Docker-Sistem-Operasi
 Muhammad Muslim Nur Wahyudi 120140008
+
 Rendy Prayoga 120140036
+
 Fatkhan Aziez Suffi 120140181
+
 Moch Pratama Hidayat 120140069
+
+Elgania Aulia Gemintang 120140113
 
 Judul Program : Jummlegris
    Jumlegris adalah game dengan bahasa Python, bermain menggunakan karakter utama yaitu kalkun. Kalkun diminta untuk melewati semua rintangan yang ada agar bisa mendapatkan skor yang tinggi.
