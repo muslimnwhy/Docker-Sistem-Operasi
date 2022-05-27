@@ -9,6 +9,8 @@ Moch Pratama Hidayat 120140069
 
 Elgania Aulia Gemintang 120140113
 
+Fauzan Tofikanagari Kumandang 120140216
+
 Judul Program : Jummlegris
    Jumlegris adalah game dengan bahasa Python, bermain menggunakan karakter utama yaitu kalkun. Kalkun diminta untuk melewati semua rintangan yang ada agar bisa mendapatkan skor yang tinggi.
  
