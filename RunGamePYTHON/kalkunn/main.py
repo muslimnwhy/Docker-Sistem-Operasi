@@ -23,9 +23,9 @@ screen = pygame.display.set_mode(scr_size)
 clock = pygame.time.Clock()
 pygame.display.set_caption("Jumlegris ")
 
-jump_sound = pygame.mixer.Sound("D:\RunGamePYTHON\kalkunn\sprites\jump.wav")
-die_sound = pygame.mixer.Sound('D:\RunGamePYTHON\kalkunn\sprites\die.wav')
-checkPoint_sound = pygame.mixer.Sound('D:\RunGamePYTHON\kalkunn\sprites\checkPoint.wav')
+#jump_sound = pygame.mixer.Sound('kalkunn/sprites/jump.wav')
+#die_sound = pygame.mixer.Sound('kalkunn/sprites/die.wav')
+#checkPoint_sound = pygame.mixer.Sound('kalkunn/sprites/checkPoint.wav')
 
 def load_image(
     name,
@@ -34,7 +34,7 @@ def load_image(
     colorkey=None,
     ):
 
-    fullname = os.path.join('sprites', name)
+    fullname = os.path.join(name)
     image = pygame.image.load(fullname)
     image = image.convert()
     if colorkey is not None:
@@ -55,7 +55,7 @@ def load_sprite_sheet(
         scaley = -1,
         colorkey = None,
         ):
-    fullname = os.path.join('sprites',sheetname)
+    fullname = os.path.join(sheetname)
     sheet = pygame.image.load(fullname)
     sheet = sheet.convert()
 
@@ -115,8 +115,8 @@ def extractDigits(number):
 
 class Kalkun(): #enkapsulasi / kelas yang menyatakan suatu variabel
     def __init__(self,sizex=-1,sizey=-1):
-        self.images,self.rect = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\kalkun-dirii.png',1,1,sizex,sizey,-1)
-        self.images1,self.rect1 = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\kalkun-nundukk.png',1,1,sizex,sizey,-1)
+        self.images,self.rect = load_sprite_sheet('sprites/kalkun-dirii.png',1,1,sizex,sizey,-1)
+        self.images1,self.rect1 = load_sprite_sheet('sprites/kalkun-nundukk.png',1,1,sizex,sizey,-1)
         self.rect.bottom = int(0.98*height)
         self.rect.left = width/15
         self.image = self.images[0]
@@ -178,17 +178,17 @@ class Kalkun(): #enkapsulasi / kelas yang menyatakan suatu variabel
 
         if not self.isDead and self.counter % 7 == 6 and self.isBlinking == False:
             self.score += 1
-            if self.score % 100 == 0 and self.score != 0:
-                if pygame.mixer.get_init() != None:
-                    checkPoint_sound.play()
+            #if self.score % 100 == 0 and self.score != 0:
+                #if pygame.mixer.get_init() != None:
+                    #checkPoint_sound.play()
 
         self.counter = (self.counter + 1)
 
 class Cactus(pygame.sprite.Sprite): #polymorphisme fungsi yang sama dapat digunakan pada tipe yang berbeda
     def __init__(self,speed=5,sizex=-1,sizey=-1):
         pygame.sprite.Sprite.__init__(self,self.containers)
-        self.images,self.rect = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\cacti-small.png',3,1,sizex,sizey,-1)
-        self.images1,self.rect1 = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\cacti-big.png',3,1,sizex,sizey,-1)
+        self.images,self.rect = load_sprite_sheet('sprites/cacti-small.png',3,1,sizex,sizey,-1)
+        self.images1,self.rect1 = load_sprite_sheet('sprites/cacti-big.png',3,1,sizex,sizey,-1)
         self.rect.bottom = int(0.98*height)
         self.rect.left = width + self.rect.width
         self.image = self.images[random.randrange(0,3)]
@@ -206,7 +206,7 @@ class Cactus(pygame.sprite.Sprite): #polymorphisme fungsi yang sama dapat diguna
 class Ptera(pygame.sprite.Sprite): #polymorphisme fungsi yang sama dapat digunakan pada tipe yang berbeda
     def __init__(self,speed=5,sizex=-1,sizey=-1):
         pygame.sprite.Sprite.__init__(self,self.containers)
-        self.images,self.rect = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\ptera.png',2,1,sizex,sizey,-1)
+        self.images,self.rect = load_sprite_sheet('sprites/ptera.png',2,1,sizex,sizey,-1)
         self.ptera_height = [height*0.82,height*0.75,height*0.60]
         self.rect.centery = self.ptera_height[random.randrange(0,1)]
         self.rect.left = width + self.rect.width
@@ -230,8 +230,8 @@ class Ptera(pygame.sprite.Sprite): #polymorphisme fungsi yang sama dapat digunak
 
 class Ground():
     def __init__(self,speed=-5):
-        self.image,self.rect = load_image('D:\RunGamePYTHON\kalkunn\sprites\ground.png',-1,-1,-1)
-        self.image1,self.rect1 = load_image('D:\RunGamePYTHON\kalkunn\sprites\ground.png',-1,-1,-1)
+        self.image,self.rect = load_image('sprites/ground.png',-1,-1,-1)
+        self.image1,self.rect1 = load_image('sprites/ground.png',-1,-1,-1)
         self.rect.bottom = height
         self.rect1.bottom = height
         self.rect1.left = self.rect.right
@@ -254,7 +254,7 @@ class Ground():
 class Cloud(pygame.sprite.Sprite):
     def __init__(self,x,y):
         pygame.sprite.Sprite.__init__(self,self.containers)
-        self.image,self.rect = load_image('D:\RunGamePYTHON\kalkunn\sprites\cloud.png',int(90*30/42),30,-1)
+        self.image,self.rect = load_image('sprites/cloud.png',int(90*30/42),30,-1)
         self.speed = 1
         self.rect.left = x
         self.rect.top = y
@@ -271,7 +271,7 @@ class Cloud(pygame.sprite.Sprite):
 class Scoreboard(): #enkapsulasi 
     def __init__(self,x=-1,y=-1):
         self.score = 0
-        self.tempimages,self.temprect = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\sumbers.png',12,1,11,int(11*6/5),-1)
+        self.tempimages,self.temprect = load_sprite_sheet('sprites/sumbers.png',12,1,11,int(11*6/5),-1)
         self.image = pygame.Surface((55,int(11*6/5)))
         self.rect = self.image.get_rect()
         if x == -1:
@@ -300,11 +300,11 @@ def introscreen():
     tempp_kalkun.isBlinking = True
     gameStart = False
 
-    temp_ground,temp_ground_rect = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\ground.png',15,1,-1,-1,-1)
+    temp_ground,temp_ground_rect = load_sprite_sheet('sprites/ground.png',15,1,-1,-1,-1)
     temp_ground_rect.left = width/20
     temp_ground_rect.bottom = height
 
-    logo,logo_rect = load_image('D:\RunGamePYTHON\kalkunn\sprites\kalkun.png',300,140,-1)
+    logo,logo_rect = load_image('sprites/kalkun.png',300,140,-1)
     logo_rect.centerx = width*0.6
     logo_rect.centery = height*0.6
     while not gameStart:
@@ -357,10 +357,10 @@ def gameplay():
     Ptera.containers = pteras
     Cloud.containers = clouds
 
-    retbutton_image,retbutton_rect = load_image('D:\RunGamePYTHON\kalkunn\sprites\seplay_button.png',35,31,-1)
-    gameover_image,gameover_rect = load_image('D:\RunGamePYTHON\kalkunn\sprites\game_over.png',190,11,-1)
+    retbutton_image,retbutton_rect = load_image('sprites/seplay_button.png',35,31,-1)
+    gameover_image,gameover_rect = load_image('sprites/game_over.png',190,11,-1)
 
-    temp_images,temp_rect = load_sprite_sheet('D:\RunGamePYTHON\kalkunn\sprites\sumbers.png',12,1,11,int(11*6/5),-1)
+    temp_images,temp_rect = load_sprite_sheet('sprites/sumbers.png',12,1,11,int(11*6/5),-1)
     HI_image = pygame.Surface((22,int(11*6/5)))
     HI_rect = HI_image.get_rect()
     HI_image.fill(background_col)
@@ -388,8 +388,8 @@ def gameplay():
                         if event.key == pygame.K_SPACE:
                             if playerKalkun.rect.bottom == int(0.98*height):
                                 playerKalkun.isJumping = True
-                                if pygame.mixer.get_init() != None:
-                                    jump_sound.play()
+                                #if pygame.mixer.get_init() != None:
+                                    #jump_sound.play()
                                 playerKalkun.movement[1] = -1*playerKalkun.jumpSpeed
 
                         if event.key == pygame.K_DOWN:
@@ -403,15 +403,15 @@ def gameplay():
                 c.movement[0] = -1*gamespeed
                 if pygame.sprite.collide_mask(playerKalkun,c):
                     playerKalkun.isDead = True
-                    if pygame.mixer.get_init() != None:
-                        die_sound.play()
+                    #if pygame.mixer.get_init() != None:
+                        #die_sound.play()
 
             for p in pteras:
                 p.movement[0] = -1*gamespeed
                 if pygame.sprite.collide_mask(playerKalkun,p):
                     playerKalkun.isDead = True
-                    if pygame.mixer.get_init() != None:
-                        die_sound.play()
+                    #if pygame.mixer.get_init() != None:
+                        #die_sound.play()
 
             if len(cacti) < 2:
                 if len(cacti) == 0:
