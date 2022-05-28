@@ -14,7 +14,7 @@
 Bounce Back merupakan game yang mampu menampilkan objek pemantul yang warnanya dapat dipilih oleh user dan menampilkan objek bola, bata, bonus, score dan menghentikan game ketika menu permainan ditampilkan. Ketika bola menyentuh bagian bawah layar, maka game akan berakhir. Selain itu program akan menampilkan sebuah menu dimana pemain dapat memainkan game dimulai dari awal atau pemain ingin mengakhiri permainan.
 
 ## Cara Menjalankan Kontainer
-Clone repositori ini atau [unduh disini](git@github.com:muslimnwhy/Docker-Sistem-Operasi.git)lalu pindahkan pygame scripts ke folder `~/Downloads`.
+Clone repositori ini atau [unduh disini](git@github.com:muslimnwhy/Docker-Sistem-Operasi.git)l alu pindahkan pygame scripts ke folder `~/Downloads`.
 
 Selanjutnya buka terminal pada direktori folder tersebut lalu jalankan perintah build seperti berikut:
 
