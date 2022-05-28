@@ -4,7 +4,7 @@
 | Muhammad Muslim Nur Wahyudi		| 120140008 | [muslimnwhy](https://github.com/muslimnwhy)     |
 | Rendy Prayoga			| 120140036 | [rendyprayoga](https://github.com/rendyprayoga)       |
 | Fatkhan Aziez Suffi			| 120140181 | [fatkhanas17](https://github.com/fatkhanas17)               |
-| Moch Pratama Hidayat			| 120140069 | [MochPratamaHidayat](https://github.com/MochPratamaHidayat)     |
+| Moch Pratama Hidayat			| 120140069 | [MochPratamaHidayat](https://github.com/TamTam4U)     |
 | Elgania Aulia Gemintang		| 120140113 | [elganiaaulia](https://github.com/elganiaaulia)               |
 | Fauzan Tofikanagari Kumandang	| 120140216 | [Fauzankumandang](https://github.com/Fauzankumandang)                 |
 
