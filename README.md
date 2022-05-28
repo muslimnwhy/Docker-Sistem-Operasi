@@ -5,7 +5,7 @@
 | Rendy Prayoga			| 120140036 | [rendyprayoga](https://github.com/rendyprayoga)       |
 | Fatkhan Aziez Suffi			| 120140181 | [fatkhanas17](https://github.com/fatkhanas17)               |
 | Moch Pratama Hidayat			| 120140069 | [MochPratamaHidayat](https://github.com/MochPratamaHidayat)     |
-| Elgania Aulia Gemintang		| 119140113 | [elganiaaulia](https://github.com/elganiaaulia)               |
+| Elgania Aulia Gemintang		| 120140113 | [elganiaaulia](https://github.com/elganiaaulia)               |
 | Fauzan Tofikanagari Kumandang	| 120140216 | [Fauzankumandang](https://github.com/Fauzankumandang)                 |
 
 
