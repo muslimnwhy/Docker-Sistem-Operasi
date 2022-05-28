@@ -18,7 +18,7 @@ Clone repositori ini atau [unduh disini]([git@github.com:muslimnwhy/Docker-Siste
 
 Selanjutnya buka terminal pada direktori folder tersebut lalu jalankan perintah build seperti berikut:
 
-    make build
+    docker build -t NAMAFILE .
 
 lalu pastikan ada repositori pada docker, dengan cara jalankan command images untuk melihat daftar images pada local storage seperti berikut:
 
@@ -26,21 +26,15 @@ lalu pastikan ada repositori pada docker, dengan cara jalankan command images un
 
 Jika proses build telah selesai, jalankan perintah run seperti berikut:
 
-untuk Windows
+    docker run -it NAMAFILE bash
+    
+Cari lokasi file main.py dengan cara :
 
-    make run-windows
-
-untuk Linux
-
-    make run-linux
-
-untuk Mac
-
-    make run-mac
+    cd LokasiFile
 
 Langkah terakhir yaitu menjalankan pygame melalui container yang telah kita buat dengan perintah seperti berikut:
 
-    python3 -m main.py
+    python3 main.py
 
 ## Video Demo Kontainer
 
