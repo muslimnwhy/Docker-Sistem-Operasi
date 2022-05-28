@@ -9,7 +9,7 @@
 | Fauzan Tofikanagari Kumandang	| 120140216 | [Fauzankumandang](https://github.com/Fauzankumandang)                 |
 
 
-## Bounce-Back
+## Jumlegris
 #### Deskripsi Projek
 Bounce Back merupakan game yang mampu menampilkan objek pemantul yang warnanya dapat dipilih oleh user dan menampilkan objek bola, bata, bonus, score dan menghentikan game ketika menu permainan ditampilkan. Ketika bola menyentuh bagian bawah layar, maka game akan berakhir. Selain itu program akan menampilkan sebuah menu dimana pemain dapat memainkan game dimulai dari awal atau pemain ingin mengakhiri permainan.
 
