@@ -18,7 +18,7 @@ Clone repositori ini atau [unduh disini]([git@github.com:muslimnwhy/Docker-Siste
 
 Selanjutnya buka terminal pada direktori folder tersebut lalu jalankan perintah build seperti berikut:
 
-    make build
+    make build 
 
 lalu pastikan ada repositori pada docker, dengan cara jalankan command images untuk melihat daftar images pada local storage seperti berikut:
 
