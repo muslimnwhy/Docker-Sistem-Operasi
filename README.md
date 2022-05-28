@@ -38,7 +38,7 @@ Langkah terakhir yaitu menjalankan pygame melalui container yang telah kita buat
 
 ## Video Demo Kontainer
 
-[![LIHAT VIDEO DISINI](https://youtu.be/0LIbUdzqw58)
+[![LIHAT VIDEO DISINI](http://img.youtube.com/vi/ay9AXiJWoRo/0.jpg)](https://youtu.be/0LIbUdzqw58)
 
 KLIK GAMBAR UNTUK MELIHAT VIDEO :
 
