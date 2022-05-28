@@ -23,9 +23,9 @@ screen = pygame.display.set_mode(scr_size)
 clock = pygame.time.Clock()
 pygame.display.set_caption("Jumlegris ")
 
-#jump_sound = pygame.mixer.Sound("D:\RunGamePYTHON\kalkunn\sprites\jump.wav")
-#die_sound = pygame.mixer.Sound('D:\RunGamePYTHON\kalkunn\sprites\die.wav')
-#checkPoint_sound = pygame.mixer.Sound('D:\RunGamePYTHON\kalkunn\sprites\checkPoint.wav')
+jump_sound = pygame.mixer.Sound("D:\RunGamePYTHON\kalkunn\sprites\jump.wav")
+die_sound = pygame.mixer.Sound('D:\RunGamePYTHON\kalkunn\sprites\die.wav')
+checkPoint_sound = pygame.mixer.Sound('D:\RunGamePYTHON\kalkunn\sprites\checkPoint.wav')
 
 def load_image(
     name,
@@ -389,7 +389,7 @@ def gameplay():
                             if playerKalkun.rect.bottom == int(0.98*height):
                                 playerKalkun.isJumping = True
                                 if pygame.mixer.get_init() != None:
-                                    #jump_sound.play()
+                                    jump_sound.play()
                                 playerKalkun.movement[1] = -1*playerKalkun.jumpSpeed
 
                         if event.key == pygame.K_DOWN:
@@ -404,14 +404,14 @@ def gameplay():
                 if pygame.sprite.collide_mask(playerKalkun,c):
                     playerKalkun.isDead = True
                     if pygame.mixer.get_init() != None:
-                        #die_sound.play()
+                        die_sound.play()
 
             for p in pteras:
                 p.movement[0] = -1*gamespeed
                 if pygame.sprite.collide_mask(playerKalkun,p):
                     playerKalkun.isDead = True
                     if pygame.mixer.get_init() != None:
-                        #die_sound.play()
+                        die_sound.play()
 
             if len(cacti) < 2:
                 if len(cacti) == 0:
