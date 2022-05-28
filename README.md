@@ -11,14 +11,14 @@
 
 ## Jumlegris
 #### Deskripsi Projek
-Jumlegris adalah sebuah game 2D yang dibuat dengan bahasa Python. Game ini terinspirasi dari Google Chrome ketika tidak ada koneksi internet akan menampilkan sebuah game dinosaurus. Jumlegris ini menggunakan karakter yang sesuai dengan namanya yaitu Kalkun. Game ini sangatlah simpel dimana player hanya perlu melompati rintangan yang ada di dalam game. Game dimulai ketika player menekan tombol play, setelah itu player memainkan seekor kalkun yang dimana kalkun ini avatar dari si player,player harus membuat kalkun tersebut tidak mengenai rintangan yang ada dengan cara akan ada trigger button keyboard spasi(contoh buat lompat ketika ada rintangan di darat ) dan arrow down(contoh buat ada rintangan diatas kepala kalkun ),ketika player gagal menghindari rintangan maka kalkun akan pingsan, dan ketika player berhasil melewati rintangan maka player akan mendapatkan score
+Jumlegris adalah sebuah game 2D yang dibuat dengan bahasa Python. Game ini terinspirasi dari Google Chrome ketika tidak ada koneksi internet akan menampilkan game dinosaurus. Jumlegris ini menggunakan karakter yang sesuai dengan namanya yaitu Kalkun. Game ini sangatlah simpel dimana player hanya perlu melompati rintangan yang ada di dalam game. Game dimulai ketika player menekan tombol play, setelah itu player memainkan seekor kalkun yang dimana kalkun ini avatar dari si player,player harus membuat kalkun tersebut tidak mengenai rintangan yang ada dengan cara akan ada trigger button keyboard spasi(contoh buat lompat ketika ada rintangan di darat ) dan arrow down(contoh buat ada rintangan diatas kepala kalkun ),ketika player gagal menghindari rintangan maka kalkun akan pingsan, dan ketika player berhasil melewati rintangan maka player akan mendapatkan score
 
 ## Cara Menjalankan Kontainer
 Clone repositori ini atau [unduh disini]([git@github.com:muslimnwhy/Docker-Sistem-Operasi.git](https://github.com/muslimnwhy/Docker-Sistem-Operasi/archive/refs/heads/main.zip)) lalu pindahkan pygame scripts ke folder `~/Downloads`.
 
 Selanjutnya buka terminal pada direktori folder tersebut lalu jalankan perintah build seperti berikut:
 
-    make build 
+    make build
 
 lalu pastikan ada repositori pada docker, dengan cara jalankan command images untuk melihat daftar images pada local storage seperti berikut:
 
